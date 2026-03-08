@@ -7,7 +7,7 @@ const App = () => {
     <div>
 
       {/* <UseState/> */}
-      <UseEffect/>
+      {/* <UseEffect/> */}
       
     </div>
   )
