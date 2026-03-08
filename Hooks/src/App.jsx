@@ -1,6 +1,7 @@
 import React from 'react'
 import UseState from './UseState'
 import UseEffect from './UseEffect'
+import UseRef from './UseRef'
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
 
       {/* <UseState/> */}
       {/* <UseEffect/> */}
+      <UseRef/>
       
     </div>
   )
