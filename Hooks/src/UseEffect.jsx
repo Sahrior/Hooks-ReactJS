@@ -18,6 +18,29 @@
 // #5 Clean up when a component unmounts
 
 
+//Think of useEffect like a helper robot 🤖 
+//that does something after the screen appears or changes.
+
+//In React:
+
+//👉 useEffect runs AFTER React shows something on the screen.
+
+
+//Basic Syntax
+
+//useEffect(() => {
+  // do something
+//}, []);
+
+//The first part:
+//() => {}   👉 the work we want to do
+
+//The second part:
+// [] 👉 when it should run
+
+
+
+
 import React from 'react'
 import { useState, useEffect } from 'react'
 

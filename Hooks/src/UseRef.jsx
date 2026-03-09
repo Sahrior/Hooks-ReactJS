@@ -8,12 +8,36 @@
 // 2. Handling Focus, Animations, and Transitions
 // 3. Managing Timers and Intervals
 
+
+
+//Think of useRef like a finger pointing to something 👆.
+
+//While useState stores data that changes the screen,
+//useRef remembers something without re-rendering the screen.
+
 import React, { useState, useEffect } from 'react';
+import { useRef } from 'react';
 
 const UseRef = () => {
+
+  const [value, setValue] = useState(0);
+
+  const count = useRef(0);
+
+  useEffect(()=>{
+    count.current = count.current + 1;
+  })
+
+
   return (
     <div>
-      App
+      
+      <button onClick={()=>{setValue(prev => prev-1)}} >-1</button>
+      <h1>{value}</h1>
+      <button onClick={()=>{setValue(prev => prev+1)}} >+1</button>
+      <h1>Render Count: {count.current} </h1>
+
+
     </div>
   )
 }

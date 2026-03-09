@@ -1,3 +1,12 @@
+//Think of useState like a magic notebook 📒 
+//inside your React component.
+
+//Whenever something can change and you want 
+//the screen to update automatically, 
+//you use useState.
+
+
+
 import React from 'react'
 import { useState } from 'react'
 
